@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">A1_mallettg1_HelloApp</string>
+    <string name="helloText">Hello World, enter some text:</string>
+    <string name="submitBtn">Submit</string>
+    <string name="message.label">Your message: </string>
+    <string name="random">Random</string>
+</resources>
