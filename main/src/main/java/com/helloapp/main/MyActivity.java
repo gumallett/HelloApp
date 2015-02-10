@@ -24,9 +24,6 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-        CheckBox randomCheckBox = (CheckBox) findViewById(R.id.random);
-        randomCheckBox.setChecked(random);
     }
 
     @Override
@@ -50,9 +47,10 @@ public class MyActivity extends Activity {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
 
         EditText messageText = (EditText) findViewById(R.id.message);
+        CheckBox randomCheckBox = (CheckBox) findViewById(R.id.random);
         String message;
 
-        if(random) {
+        if(randomCheckBox.isChecked()) {
             message = randomString(12);
         }
         else {
